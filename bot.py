@@ -10,4 +10,9 @@ def echo(message):
     bot.send_message(message.chat.id, message.text)
 
 
+@bot.message_handler()
+def fact(message):
+    bot.send_message(message.chat.id, 'интересный факт: этот бот недоделан')
+
+
 bot.polling()
